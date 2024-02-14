@@ -39,7 +39,7 @@ $("#navAbout").on("mouseleave", function(){
     $("a[target='navAbout']").on("mouseenter", function(){
       $("a[target='navAbout']").css("color", "black");
     });
-    */
+    
 
   $(".resume").on("mouseover", function(){
     $(".resume").css("color", "yellow");
@@ -48,4 +48,25 @@ $("#navAbout").on("mouseleave", function(){
   $(".resume").on("mouseleave", function(){
     $(".resume").css("color", "black");
     $(".resume").css("background-color", "pink");
+  });
+  
+  $(document).ready(function(){
+  $(".myBio").hover(function(){
+  $(this).css("color", "white");
+  $(this).css("background-color", "black");
+  }, function(){
+  $(this).css("color", "black");
+  $(this).css("background-color", "#C3F5E4");
+});
+  });
+  */
+
+
+  $("button").on("mouseover", function(){
+    $(this).css("color", "white");
+    $(this).css("background-color", "black");
+  });
+  $("button").on("mouseleave", function(){
+    $(this).css("color", "black");
+    $(this).css("background-color", "#C3F5E4");
   });
